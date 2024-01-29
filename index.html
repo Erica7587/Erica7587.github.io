@@ -6,24 +6,42 @@
     <title>Document</title>
     <style>
         html,body{
+            position: relative;
             height: 100%;
             background: url("fon.jpg");
 
         }
         .p1{
+            position: absolute;
+            top: 1px;
+            left: 1070px;
             width: 500px;
 
         }
         .p2{
+            position: absolute;
+            top: 1px;
+            left: 250px;
             width: 300px;
+        }
+        .p3{
+            position: absolute;
+            top: 1px;
+            left: 560px;
+            width: 500px;
+        }
+        .p4{
+            position: absolute;
+            top: 1px;
+            left: 2px;
         }
     </style>
 </head>
 <body>
     котики
     
-    <img src="cat2.jpg" alt="">
-    <img src="cat3.avif" alt="">
+    <img class="p4"src="cat2.jpg" alt="">
+    <img class="p3" src="cat3.avif" alt="">
     <img class="p2" src="cat4.jpg" alt="">
     <img class="p1" src="cat5.jpg" alt="">
 </body>
