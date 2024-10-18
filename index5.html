@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+  <div id="box"></div>     
+</body>
+<script> 
+    posX = 100;
+    posY = 100;
+
+    let elem = document.getElementById('box');
+    elem.style.position = "fixed";
+    elem.style.top = '400px';
+    elem.style.left = '300px';
+    elem.style.width = '200px';
+    elem.style.height = '200px';
+    elem.style.backgroundImage= 'url(flower.webp)';
+
+setInterval(function moveBox(){
+    elem.style.top = posX + 'px';
+    elem.style.left = posY + 'px';
+    posX++;
+    posY++;
+}, 10)
+
+</script>
+</html>
