@@ -12,16 +12,26 @@
      document.body.append(zombie);
      
      let left = 100;
-      let step = 100;  // длина шага 
+      let step = 10;  // длина шага 
       zombie.style.position = 'fixed';
-       zombie.style.top = '100px'; // отступ сверху
-        zombie.style.left = left + 'px'; // отступ слева
+       zombie.style.top = '500px'; // отступ сверху
+        zombie.style.left = left + '100%'; // отступ слева
 
         function moveZombie(){
         left = left + step;
-        zombie.style.left = left + 'px';
+        if (left>1000){
+            step = step *(-1);
+            zombie.style.transform = 'rotateY(180deg)';
+        }
+        if (left<0){
+            step = step *(-1);
+            zombie.style.transform = 'rotateY(0)';
+        }
+        zombie.style.left = left + 'px'; 
         }
 setInterval(moveZombie, 100); 
+
+
  </script>
 </body>
 </html>
