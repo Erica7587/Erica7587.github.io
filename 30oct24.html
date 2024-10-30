@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-let city_name = ['Щелково' ,'Нью-Йорк', 'Токио', 'Дубай', 'Молдова']
+let city_name = ['Щелково' ,'Нью-Йорк', 'Токио', 'Дубай', 'Москва']
 let cost = [500, 750, 920, 650, 1100];
 
 
@@ -19,10 +19,10 @@ document.body.append (diagram);
 
 for (let i=0; i < 5; i++){
 let city = document.createElement ('div');
-city. style. width = '100px';
-city. style.height = cost [i] +'px';
-city. style.background = 'blue';
-city. style.margin = '10px';
+city.style.width = '100px';
+city.style.height = cost [i] +'px';
+city.style.background = 'blue';
+city.style.margin = '10px';
 diagram. append (city);
 city. innerHTML = city_name[i] +' <br>' + cost[i];
 }
